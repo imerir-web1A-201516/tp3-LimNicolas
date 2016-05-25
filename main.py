@@ -19,7 +19,7 @@ def db_init():
         host=url.hostname,
         port=url.port
     )
-    cur = self.conn.cursor()
+    cur = conn.cursor()
     db_createTables(cur)
 
     return conn, cur
